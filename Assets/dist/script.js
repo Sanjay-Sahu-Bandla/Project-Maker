@@ -2,6 +2,7 @@
 
 $(document).ready(function() {
 
+  // creating project
   $('form').on('submit',function(event) {
 
     event.preventDefault();
@@ -23,12 +24,10 @@ $(document).ready(function() {
         if(data == 'Project_exists') {
 
           $('#loader').html('');
-          
           alert("Project already exists !");
         }
 
         else {
-
           var split_data = data.split(',');
 
           $('#loader').html('');
@@ -36,7 +35,6 @@ $(document).ready(function() {
           alert("JSON status : "+split_data[0]+"\n"+
 
             "Project status : "+split_data[1]);
-          
         }
 
       },
@@ -48,13 +46,14 @@ $(document).ready(function() {
 
   });
 
+  // deleting project
+  $('.delete_project').on('click', function() {
 
-  $('input, select, radio, .input-group-text').css('background','#303030','color','red');
-  $('.form-control, select, checkbox, radio, .input-group-text').css('border','none', 'color','#3b94ee');
-  $('*').css('color','#9f9f9f');
-  $('input, select').css('color','#c6c6c6');
-
-
+    $.post('delete_project.php', { id: $(this).attr('id') } ,() => {
+    }).done((response) => {
+      alert(response);
+    })
+  })
 });
 
 function myFunction() {

@@ -1,42 +1,11 @@
 body {
-	background: #121212;
+  background: lightgrey;
 }
 
-.custom-file-input:lang(en) ~ .custom-file-label::after {
-    content: "Browse";
-    background: #303030;
-    color: #c6c6c6;
+@media (max-width: 800px) {
+  .custom-file-label {
+    margin-top: 0px !important;
+    margin: 0 13px;
+  }
 }
-
-.dark-mode {
-	background: #121212;
-	color: #ffffff;
-}
-
-.dark-text {
-	color: #fff;
-}
-
-.dark-primary {
-	background: #212121;
-}
-
-.dark-secondary {
-	background: #303030;
-	color: #fff;
-}
-
-.dark-secondary:hover {
-	background: #212121;
-}
-
-@media(max-width: 800px) {
-
-	body {
-		/*display: none;*/
-	}
-	.custom-file-label {
-		margin-top: 0px !important;
-		margin: 0 13px;
-	}
-}
+/*# sourceMappingURL=style.css.map */

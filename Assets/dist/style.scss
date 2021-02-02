@@ -1,0 +1,11 @@
+body {
+	background: lightgrey;
+}
+
+@media(max-width: 800px) {
+
+	.custom-file-label {
+		margin-top: 0px !important;
+		margin: 0 13px;
+	}
+}

@@ -30,18 +30,18 @@
 <body class="container my-3">
 
 	<h3 class="text-center dark-text">Create Project</h3>
-	<form class="needs-validation" method="post" action="" enctype="multipart/form-data">
+	<form class="needs-validation" method="post" action="deploy.php" enctype="multipart/form-data">
 		<div class="row">
 			<div class="col-md-6 mb-3">
 				<label for="firstName">Project name</label>
-				<input type="text" class="form-control" id="firstName" placeholder="" value="" required name="project_name">
+				<input type="text" class="form-control" id="firstName" placeholder="" value="" required name="project_name" autofocus="">
 				<div class="invalid-feedback">
 					Valid project name is required.
 				</div>
 			</div>
 			<div class="col-md-6 mb-3">
 				<input type="file" class="custom-file-input" id="fav_icon" name="fav_icon">
-				<label class="custom-file-label" for="fav_icon" style="margin-top: 30px; background: #303030;border: none;">Fav Icon (optional)</label>
+				<label class="custom-file-label" for="fav_icon" style="margin-top: 30px;">Fav Icon (optional)</label>
 			</div>
 		</div>
 
@@ -54,31 +54,31 @@
 					<div><h6 class="pl-3 d-inline text-white">Project Includes</h6>
 					</div>
 				</li>
-				<li class="list-group-item list-group-item-action d-flex justify-content-between dark-secondary">
+				<li class="list-group-item list-group-item-action d-flex justify-content-between">
 					<div class="custom-control custom-checkbox">
 						<input type="checkbox" class="custom-control-input" checked="" name="bootstrap" id="bootstrap">
 						<label class="custom-control-label" for="bootstrap">Bootstrap 4.4.1 </label>
 					</div>
 				</li>
-				<li class="list-group-item list-group-item-action d-flex justify-content-between dark-secondary">
+				<li class="list-group-item list-group-item-action d-flex justify-content-between">
 					<div class="custom-control custom-checkbox">
 						<input type="checkbox" class="custom-control-input" checked="" name="fontawesome" id="fontawesome">
 						<label class="custom-control-label" for="fontawesome">Fontawesome 5</label>
 					</div>
 				</li>
-				<li class="list-group-item list-group-item-action d-flex justify-content-between dark-secondary">
+				<li class="list-group-item list-group-item-action d-flex justify-content-between">
 					<div class="custom-control custom-checkbox">
 						<input type="checkbox" class="custom-control-input" checked="" name="jquery" id="jquery">
 						<label class="custom-control-label" for="jquery">JQuery.slim.min.js - 3.5.0</label>
 					</div>
 				</li>
-				<li class="list-group-item list-group-item-action d-flex justify-content-between dark-secondary">
+				<li class="list-group-item list-group-item-action d-flex justify-content-between">
 					<div class="custom-control custom-checkbox">
 						<input type="checkbox" class="custom-control-input" name="croppie" id="croppie">
 						<label class="custom-control-label" for="croppie">Croppie </label>
 					</div>
 				</li>
-				<li class="list-group-item list-group-item-action d-flex justify-content-between dark-secondary">
+				<li class="list-group-item list-group-item-action d-flex justify-content-between">
 					<div class="custom-control custom-checkbox">
 						<input type="checkbox" class="custom-control-input" name="sweetalert" id="sweetalert">
 						<label class="custom-control-label" for="sweetalert">Sweet Alert </label>
@@ -96,31 +96,31 @@
 					<div><h6 class="pl-3 d-inline text-white">Generate Files</h6>
 					</div>
 				</li>
-				<li class="list-group-item list-group-item-action d-flex justify-content-between dark-secondary">
+				<li class="list-group-item list-group-item-action d-flex justify-content-between">
 					<div class="custom-control custom-checkbox">
 						<input type="checkbox" class="custom-control-input" checked="" name="html_file" id="html_file">
 						<label class="custom-control-label" for="html_file">index.html </label>
 					</div>
 				</li>
-				<li class="list-group-item list-group-item-action d-flex justify-content-between dark-secondary">
+				<li class="list-group-item list-group-item-action d-flex justify-content-between">
 					<div class="custom-control custom-checkbox">
 						<input type="checkbox" class="custom-control-input" checked="" name="php_file" id="php_file">
 						<label class="custom-control-label" for="php_file">index.php </label>
 					</div>
 				</li>
-				<li class="list-group-item list-group-item-action d-flex justify-content-between dark-secondary">
+				<li class="list-group-item list-group-item-action d-flex justify-content-between">
 					<div class="custom-control custom-checkbox">
 						<input type="checkbox" class="custom-control-input" checked="" name="css_file" id="css_file">
 						<label class="custom-control-label" for="css_file">style.css </label>
 					</div>
 				</li>
-				<li class="list-group-item list-group-item-action d-flex justify-content-between dark-secondary">
+				<li class="list-group-item list-group-item-action d-flex justify-content-between">
 					<div class="custom-control custom-checkbox">
 						<input type="checkbox" class="custom-control-input" checked="" name="scss_file" id="scss_file">
 						<label class="custom-control-label" for="scss_file">style.scss </label>
 					</div>
 				</li>
-				<li class="list-group-item list-group-item-action d-flex justify-content-between dark-secondary">
+				<li class="list-group-item list-group-item-action d-flex justify-content-between">
 					<div class="custom-control custom-checkbox">
 						<input type="checkbox" class="custom-control-input" checked="" name="js_file" id="js_file">
 						<label class="custom-control-label" for="js_file">script.js </label>
@@ -130,13 +130,13 @@
 		</div>
 
 		<div class="mb-3">
-			<li class="list-group-item list-group-item-action d-flex justify-content-between dark-secondary">
+			<li class="list-group-item list-group-item-action d-flex justify-content-between">
 				<div class="custom-control custom-checkbox">
 					<input type="checkbox" class="custom-control-input" checked="" name="generate_structure" id="generate_structure">
 					<label class="custom-control-label" for="generate_structure">Generate Structure for the index files</label>
 				</div>
 			</li>
-			<li class="list-group-item list-group-item-action d-flex justify-content-between dark-secondary">
+			<li class="list-group-item list-group-item-action d-flex justify-content-between">
 				<div class="custom-control custom-checkbox">
 					<input type="checkbox" class="custom-control-input" checked="" name="link_files" id="link_files">
 					<label class="custom-control-label" for="link_files">Link index files with the generated files</label>
